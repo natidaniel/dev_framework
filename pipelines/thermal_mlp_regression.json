@@ -1,0 +1,33 @@
+{
+  "MLPRegression": {
+    "BaseAlgo": {
+      "inputData": "None",
+      "outputData": "MLPRegression",
+      "useSavedData": true
+    },
+    "MLPRegression": {
+      "name": "MLPRegression"
+    },
+    "AlgoParams": {
+      "BaseAlgoParams": {
+        "input_file": "None",
+        "output_file": "/home/nati/git/output_pipelines/thermal/mlp_regressor.p"
+      },
+      "MLPRegressionParams": {
+        "train_csv_path": "/media/savirlab/New Volume/ThermalData/Temp_Net/ResNet_csv/resnet_101_train.csv",
+        "test_csv_path": "/media/savirlab/New Volume/ThermalData/Temp_Net/ResNet_csv/resnet_101_test.csv",
+   		"hidden_layer_sizes": "(256,128,64)",
+		"activation": "relu",
+		"solver": "sgd",
+		"learning_rate": "constant",
+		"learning_rate_init": 0.001,
+		"power_t": 0.5,
+		"alpha": 0.0001,
+		"max_iter": 1000,
+		"early_stopping": false,
+		"warm_start": false,
+        "cv": 5
+      }
+    }
+  }
+}

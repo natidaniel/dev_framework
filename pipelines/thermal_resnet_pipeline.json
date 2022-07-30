@@ -1,0 +1,32 @@
+{
+  "ResNetExtraction": {
+    "BaseAlgo": {
+      "inputData": "None",
+      "outputData": "resnet_algo_output_dict",
+      "useSavedData": true
+    },
+    "ResNetExtraction": {
+      "name": "ResNetExtraction"
+    },
+    "AlgoParams": {
+      "BaseAlgoParams": {
+        "input_file": "None",
+        "output_file": "/home/nati/git/output_pipelines/thermal/resnet/resnet101.p"
+      },
+      "ResNetExtractionParams": {
+        "model_type": "resnet101",
+        "inputImagePath": "/media/savirlab/New Volume/ThermalData/Temp_Net/from_biomed/data/test",
+        "patients_data_file": "/home/nati/git/nd_pipeline/models/patients data frame.xlsx",
+        "img_manipulation_type": "Avg10",
+        "outputPath": "/home/nati/git/output_pipelines/thermal/resnet",
+        "save_embedding_file": true,
+        "pca2D": false,
+        "pca3D": true,
+        "tsne2D" : false,
+        "tsne3D" : false,
+        "n_comp": 3,
+        "full" : false
+      }
+    }
+  }
+}

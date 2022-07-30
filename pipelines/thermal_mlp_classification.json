@@ -1,0 +1,25 @@
+{
+  "MLPClassification": {
+    "BaseAlgo": {
+      "inputData": "None",
+      "outputData": "MLPClassification",
+      "useSavedData": true
+    },
+    "MLPClassification": {
+      "name": "MLPClassification"
+    },
+    "AlgoParams": {
+      "BaseAlgoParams": {
+        "input_file": "None",
+        "output_file": "/home/nati/git/output_pipelines/thermal/mlp_classifier.p"
+      },
+      "MLPClassificationParams": {
+        "train_csv_path": "/media/savirlab/New Volume/ThermalData/Temp_Net/ResNet_csv/resnet_101_train.csv",
+        "test_csv_path": "/media/savirlab/New Volume/ThermalData/Temp_Net/ResNet_csv/resnet_101_test.csv",
+   		"hidden_layer_sizes": "(256,128,64)",
+		"activation": "relu",
+		"max_iter": "1000"
+      }
+    }
+  }
+}
